@@ -1,0 +1,33 @@
+:root{
+    --very-light-pink: #c7c7c7;
+    --white: #ffffff;
+    --text-imput-field: #f7f7f7;
+    --black: #000000;
+    --hospital-green:#acd982;
+    font-family: 'Quicksand', sans-serif;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    border:0;
+    box-sizing: border-box;
+}
+.primary-button{
+    background-color: var(--hospital-green);
+    outline: none;
+    border-radius: 0.8rem;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 3rem;
+}
