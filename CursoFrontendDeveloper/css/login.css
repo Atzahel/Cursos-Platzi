@@ -48,8 +48,25 @@
     padding: 0.6rem;
     outline: var(--hospital-green);
 }
+.forgot-password{
+    font-size: var(--sm);
+    margin-bottom: 5rem;
+}
+.forgot-password span{
+    color: var(--very-light-pink);
+}
+.forgot-password a{
+    text-decoration: none;
+    color: var(--hospital-green);
+}
 @media (max-width: 640px) {
     .logo{
         display: block;
+    }
+    .secundary-button{
+        position: absolute;
+        margin-bottom: 2.4rem;
+        bottom: 0;
+        width: 30rem;
     }
 }

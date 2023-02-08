@@ -9,7 +9,6 @@
     grid-template-columns: 1;
     grid-template-rows: auto 1fr;
     width: 30rem;
-    justify-items: center;
 }
 .logo{
     width:15rem;
@@ -20,7 +19,8 @@
 .title{
     font-size: var(--lg);
     margin: 1.2rem;
-    text-align: center;
+    text-align: start;
+    margin: 3rem 0;
 }
 .subtitle{
     color: var(--very-light-pink);
@@ -30,32 +30,39 @@
     margin-bottom: 3.2rem;
     text-align: center;
 }
-.form {
+.form{
     display: flex;
     flex-direction: column;
-  }
-  .label {
+
+}
+.label{
     font-size: var(--sm);
     font-weight: bold;
-    margin-bottom: 0.4rem;
-  }
-  .input {
-    background-color: var(--text-input-field);
+    margin-top: 0.4rem;
+}
+input{
+    background-color: var(--text-imput-field);
     border: none;
     border-radius: 0.8rem;
     height: 3rem;
     font-size: var(--md);
     padding: 0.6rem;
-    margin-bottom: 1.2rem;
-  }
-  
-  .login-button {
-    margin-top: 1.4rem;
-    margin-bottom: 3rem;
-  }
+    outline: var(--hospital-green);
+}
 
+.input-name,
+.input-password,
+.input-email{
+    margin-bottom: 1.2rem;
+}
 @media (max-width: 640px) {
     .logo{
         display: block;
+    }
+    .primary-button{
+        position: absolute;
+        margin-bottom: 2.4rem;
+        bottom: 0;
+        width: 30rem;
     }
 }
