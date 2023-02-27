@@ -1,3 +1,4 @@
+include components/config.pug
 doctype html
 html(lang="en")
 	head
@@ -8,6 +9,22 @@ html(lang="en")
 		link(rel="stylesheet", href="css/ejercicio-pug.css")
 		title Platzi Gaming
 	body 
-		header 
-			h1 PlatziGames
-			a.boton Registro
+		include components/header.pug
+		section.intro 
+			div.intro__image
+				img(src="images/imagen.png", alt="Image")
+			.intro__contenido 
+				h2 #{titulos[0][1]}
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit laudantium voluptatibus odio, similique 
+					span Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+				a.boton leer más
+			ul 
+				each titulo in titulos
+					li=titulo
+		main.contenido 
+			+caja("imagen.png", titulos[1], "Hola, soy un contenido que funciona por medio de variables")
+			+caja("imagen.png", titulos[2], "Hola, soy un segundo texto generico que funciona como ejemplo")
+			+caja("imagen.png", titulos[3], "Hola, soy un tercer texto generico que funciona como ejemplo")
+			+caja("imagen.png", titulos[3], "Hola, soy un cuarto texto generico que funciona como ejemplo")
+		
+		include components/footer.pug
